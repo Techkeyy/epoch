@@ -72,7 +72,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ a
 {
   "verdict": {
     "kind": "changed",          // missing | locked | unchanged | changed
-    "at": { "height": 95702651, "time": 1688496334058 },
+    "at": { "height": 95702651, "time": 1688496334059 },
     "daysAgo": 1224,
     "recent": false,            // true when control changed in the last 30 days
     "pattern": "handover",      // overlap | swap | handover

@@ -52,13 +52,13 @@ Epoch reports when control changed and how. It never calls an account a scam: a 
   "account": "ruble.near",
   "verdict": {
     "kind": "changed",
-    "at": { "height": 95702651, "time": 1688496334058 },
+    "at": { "height": 95702651, "time": 1688496334059 },
     "daysAgo": 1224,
     "recent": false,
     "pattern": "handover",
     "keylessDays": 244,
     "previousKeys": 4,
-    "oldRemoved": { "time": 1667421857802 }
+    "oldRemoved": { "time": 1667421857803 }
   },
   "explanation": {
     "tone": "changed",
