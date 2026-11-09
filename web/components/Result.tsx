@@ -59,7 +59,7 @@ export function Result({ answer }: { answer: Report & { explanation: Explanation
   const limited = answer.keys.length - full.length;
   return (
     <section className={`result tone-${e.tone}`} aria-live="polite">
-      <span className="badge">{BADGE[e.tone]}</span>
+      <span className="badge">{answer.verdict.kind === 'locked' ? 'Locked' : BADGE[e.tone]}</span>
       <h2>{e.headline}</h2>
       <div className="detail">
         {e.detail.map((d) => (
