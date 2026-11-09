@@ -83,18 +83,28 @@ The labelled set (`web/benchmark/labels.json`):
 - **Sold:** every account bought through near.bet's on-chain marketplace (`acquire` succeeded on `c.nearbet.near`), 71 accounts. Control certainly changed on the sale date.
 - **Stayed:** 80 long-running projects and public figures whose identity carried on in public. I assume, but cannot prove, that they kept control.
 
-First result, from current keys and their dates alone (`research/nonce-test.mjs`, run on 9 November 2026):
+Results of the full engine on mainnet, run on 9 November 2026 ([results.json](web/benchmark/results.json)):
 
-| | Sold (71) | Stayed (80) |
+| | Sold (71) | Stayed (70 read) |
 |---|---|---|
-| No full-access key (locked) | 8 | 36 |
-| Controlled by a key from before June 2021 | 8 | 16 |
-| Keys carry dates | 55 | 28 |
-| Current control starts at or after the sale (60-day window, because near.bet removes the seller's keys at listing) | **55 of 55** | n/a |
-| Current control started in the last 90 days | 0 | 0 |
-| Current control started in the last 365 days | 0 | 1 |
+| Control changed | 55 | 12 |
+| ... and dated at or after the sale | **55 of 55** | n/a |
+| Switch was a **handover** (old keys removed, a stretch with no full-access key, then new keys) | **49** | **0** |
+| Switch was a swap | 5 | 5 |
+| Switch was an overlap | 1 | 7 |
+| Same keys since before June 2021, so no date to compare | 8 | 32 unchanged in all |
+| No full-access key today (locked) | 8 | 26 |
+| Control changed in the 30 days before the check | 0 | 0 |
+| Control changed in the 365 days before the check | 0 | 1 |
 
-What this shows: when an account is sold, Epoch dates the new control to the sale every time. It also shows why Epoch does not give a "sold" score: many long-running projects have fully replaced their keys at some point (one in the last year), and a key replacement on its own looks the same. That is why Epoch reports the pattern of each switch instead of a verdict.
+What this shows:
+
+- **When an account changes hands, Epoch dates it.** Every sold account where control changed is dated at or after its sale. The 8 it could not date were sold before June 2021, when NEAR began stamping keys with their block, and Epoch says exactly that instead of guessing.
+- **The handover pattern is the signature of a sale.** It appears in 49 of 71 sold accounts and in none of the 70 that stayed.
+- **A key change alone is not proof.** Twelve long-running accounts have replaced their keys at some point, all as swaps or overlaps. That is why Epoch reports the pattern of each switch and never a "sold" score.
+- **"Changed recently" is rare for real organisations.** None of the 70 changed control in the month before the check, so a 30-day rule for agents would not have stopped a payment to any of them.
+
+Not counted: 4 names in my stayed list do not exist on mainnet, and 6 stayed accounts (`near`, `mintbase.near`, `nearweek.near`, `nf-finance.near`, `mike.near`, `zavodil.near`) have between 149 and 36,380 keys in their history. Archival servers refuse to list more than 100 keys, so for them Epoch needs NearBlocks' history, and its free daily allowance ran out during the run.
 
 Read these numbers with their limits: the sold set comes from one marketplace, mostly 2021 and 2022. The stayed set is my own choice of well-known accounts. Neither is a random sample of NEAR.
 

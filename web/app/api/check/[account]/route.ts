@@ -42,7 +42,9 @@ export async function GET(_req: Request, ctx: { params: Promise<{ account: strin
         { status: 503, headers: { 'retry-after': '30' } },
       );
     return answer(report);
-  } catch {
+  } catch (e) {
+    if (/too many keys/.test((e as Error).message))
+      return Response.json({ error: `${account} has had more keys than free public servers will list, so Epoch cannot read its history.` }, { status: 422 });
     return Response.json({ error: 'NEAR’s public servers did not answer in time. Nothing is wrong with the account; please try again.' }, { status: 503 });
   }
 }

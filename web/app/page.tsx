@@ -45,6 +45,16 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ a
             </p>
             <TimeTravel report={saved as unknown as Report} />
             <p className="travel-note">Drag along a real account’s history, read from mainnet on 9 November 2026.</p>
+            <div className="proof">
+              <p className="proof-figure">
+                <span>49</span> of 71
+              </p>
+              <p>
+                accounts sold on near.bet show this handover: old keys removed, a stretch with no key, then new keys.
+                Among 70 long-running projects and people, <strong>none</strong> do.{' '}
+                <a href="https://github.com/Techkeyy/epoch#does-it-work-the-benchmark">How this was measured</a>
+              </p>
+            </div>
           </div>
         </section>
 

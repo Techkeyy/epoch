@@ -383,3 +383,8 @@ pre { margin: 0; background: #1f1d19; color: #ebe6da; padding: 20px; border-radi
 }
 
 .travel .readout { display: none; }
+.proof { margin-top: 32px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 24px; align-items: center; padding-top: 24px; border-top: 1px solid var(--hair-2); }
+.proof-figure { margin: 0; font: 400 18px var(--font-sans); color: var(--ink-2); white-space: nowrap; }
+.proof-figure span { font: 500 64px/1 var(--font-serif); font-variation-settings: 'SOFT' 100, 'WONK' 1; color: var(--era); margin-right: 6px; }
+.proof p:last-child { margin: 0; font-size: 17px; color: var(--ink-2); max-width: 60ch; }
+@media (max-width: 599px) { .proof { grid-template-columns: 1fr; gap: 8px; } }

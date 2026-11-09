@@ -16,6 +16,8 @@ const INDEXER = 'https://api.nearblocks.io/v1';
 // NearBlocks' free plan allows about 330 calls a day. Keep some back, then fall back to archival state.
 const INDEXER_DAILY = Number(process.env.EPOCH_INDEXER_DAILY ?? 280);
 const HISTORY_TTL = 60 * 60_000;
+const PER_PAGE = 50;
+const MAX_PAGES = 20;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 type RpcError = { name?: string; cause?: { name?: string } };
@@ -98,6 +100,8 @@ export const mainnet: Chain = {
       const { result, error } = await call<KeyView>('query', { request_type: 'view_access_key_list', account_id: account, ...at });
       if (result) return height === undefined ? toKeys(result) : remember(cacheKey, toKeys(result));
       if (missing(error)) return height === undefined ? [] : remember(cacheKey, []);
+      // Archival nodes will not list more than 100 keys; only the indexer can answer for such an account.
+      if (/TOO_MANY_ACCESS_KEYS/.test(error?.cause?.name ?? '')) throw new Error(`${account} had too many keys to read from archival state`);
       if (h === undefined || !skipped(error) || h - height! > 50) throw new Error(`Could not read keys of ${account}`);
     }
   },
@@ -116,30 +120,41 @@ export const mainnet: Chain = {
     if (hit && Date.now() - hit.at < HISTORY_TTL) return hit.value;
     const today = new Date().toISOString().slice(0, 10);
     if (budget.day !== today) Object.assign(budget, { day: today, used: 0 });
-    const found = new Map<string, KeyLife>();
-    let cursor = '';
-    for (let page = 0; page < 6; page++) {
-      if (budget.used >= INDEXER_DAILY) return null;
-      budget.used++;
-      try {
-        const headers: Record<string, string> = { accept: 'application/json' };
-        if (process.env.NEARBLOCKS_API_KEY) headers.authorization = `Bearer ${process.env.NEARBLOCKS_API_KEY}`;
-        const r = await fetch(`${INDEXER}/account/${encodeURIComponent(account)}/keys?per_page=50${cursor ? `&cursor=${cursor}` : ''}`, {
-          headers,
-          signal: AbortSignal.timeout(15_000),
-        });
-        if (!r.ok) return null;
-        const j = (await r.json()) as { cursor?: string; keys?: IndexedKey[] };
-        for (const k of j.keys ?? []) {
-          const ms = (t?: { block_timestamp?: number | string | null }) => (t?.block_timestamp ? Math.round(Number(t.block_timestamp) / 1e6) : null);
-          found.set(`${k.public_key}|${ms(k.created)}`, { publicKey: k.public_key, full: k.permission_kind === 'FULL_ACCESS', added: ms(k.created), removed: ms(k.deleted) });
+    const headers: Record<string, string> = { accept: 'application/json' };
+    if (process.env.NEARBLOCKS_API_KEY) headers.authorization = `Bearer ${process.env.NEARBLOCKS_API_KEY}`;
+    const base = `${INDEXER}/account/${encodeURIComponent(account)}/keys`;
+    // The free plan allows a burst of about six calls, then wants up to a minute of rest.
+    const ask = async <T>(url: string): Promise<T | null> => {
+      for (const wait of [3_000, 6_000, 12_000, 24_000, 30_000, 30_000, 30_000]) {
+        if (budget.used >= INDEXER_DAILY) return null;
+        budget.used++;
+        try {
+          const r = await fetch(url, { headers, signal: AbortSignal.timeout(15_000) });
+          if (r.ok) return (await r.json()) as T;
+          if (r.status !== 429) return null;
+        } catch {
+          return null;
         }
-        if (!j.cursor || j.cursor === cursor || (j.keys?.length ?? 0) < 50) break;
-        cursor = j.cursor;
-      } catch {
-        return null;
+        await sleep(wait);
       }
+      return null;
+    };
+    // This endpoint pages by number, 50 at most, and an incomplete list would hide earlier keys, so read the
+    // count first and every page after it. Accounts with very long histories use archival state instead.
+    const counted = await ask<{ keys?: { count?: string }[] }>(`${base}/count`);
+    const total = Number(counted?.keys?.[0]?.count);
+    if (!Number.isFinite(total)) return null;
+    const pages = Math.ceil(total / PER_PAGE);
+    if (pages > MAX_PAGES) throw new Error(`${account} had too many keys to read (${total.toLocaleString('en-US')} in its history)`);
+    const found = new Map<string, KeyLife>();
+    const ms = (t?: { block_timestamp?: number | string | null }) => (t?.block_timestamp ? Math.round(Number(t.block_timestamp) / 1e6) : null);
+    for (let page = 1; page <= pages; page++) {
+      if (page > 1) await sleep(1_000);
+      const j = await ask<{ keys?: IndexedKey[] }>(`${base}?per_page=${PER_PAGE}&page=${page}`);
+      if (!j) return null;
+      for (const k of j.keys ?? []) found.set(`${k.public_key}|${ms(k.created)}`, { publicKey: k.public_key, full: k.permission_kind === 'FULL_ACCESS', added: ms(k.created), removed: ms(k.deleted) });
     }
+    if (found.size < total) return null;
     const value = [...found.values()];
     recent.set(account, { at: Date.now(), value });
     if (recent.size > 5_000) recent.delete(recent.keys().next().value!);

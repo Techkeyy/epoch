@@ -1,0 +1,1963 @@
+{
+ "ranAt": "2026-11-09T22:08:06.276Z",
+ "sold": [
+  {
+   "account": "tinsman.near",
+   "soldAt": "2021-07-22",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 43271046,
+     "time": 1626960029323
+    },
+    "daysAgo": 1936,
+    "recent": false,
+    "previousKeys": 7,
+    "oldRemoved": {
+     "time": 1616521840804
+    },
+    "pattern": "handover",
+    "keylessDays": 121
+   }
+  },
+  {
+   "account": "crow.near",
+   "soldAt": "2021-03-24",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "o0.near",
+   "soldAt": "2021-03-28",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "100near.near",
+   "soldAt": "2021-04-05",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "crocodile.near",
+   "soldAt": "2021-04-07",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "economist.near",
+   "soldAt": "2021-04-12",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "justeat.near",
+   "soldAt": "2021-04-17",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 47347934,
+     "time": 1631205782209
+    },
+    "daysAgo": 1887,
+    "recent": false,
+    "previousKeys": 9,
+    "oldRemoved": {
+     "time": 1698054491718
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "bitcoinwallet.near",
+   "soldAt": "2021-05-20",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "mariya.near",
+   "soldAt": "2021-05-21",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "veryfar.near",
+   "soldAt": "2021-05-21",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "near.near",
+   "soldAt": "2021-06-02",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 38910211,
+     "time": 1622595477256
+    },
+    "daysAgo": 1986,
+    "recent": false,
+    "previousKeys": 10,
+    "oldRemoved": {
+     "time": 1622595534505
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "ilove.near",
+   "soldAt": "2021-07-28",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 43772879,
+     "time": 1627466640181
+    },
+    "daysAgo": 1930,
+    "recent": false,
+    "previousKeys": 15,
+    "oldRemoved": {
+     "time": 1627466663728
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "shopify.near",
+   "soldAt": "2021-08-02",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 44168137,
+     "time": 1627874137891
+    },
+    "daysAgo": 1925,
+    "recent": false,
+    "previousKeys": 7,
+    "oldRemoved": {
+     "time": 1620998679449
+    },
+    "pattern": "handover",
+    "keylessDays": 80
+   }
+  },
+  {
+   "account": "ruby.near",
+   "soldAt": "2021-08-13",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 64807811,
+     "time": 1651580127508
+    },
+    "daysAgo": 1651,
+    "recent": false,
+    "previousKeys": 8,
+    "oldRemoved": {
+     "time": 1651580211611
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "go-to.near",
+   "soldAt": "2021-08-25",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 46103616,
+     "time": 1629876408845
+    },
+    "daysAgo": 1902,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "height": 38433063,
+     "time": 1622116126563
+    },
+    "pattern": "handover",
+    "keylessDays": 90
+   }
+  },
+  {
+   "account": "ashley.near",
+   "soldAt": "2021-08-25",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 46103843,
+     "time": 1629874207020
+    },
+    "daysAgo": 1902,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1618424162016
+    },
+    "pattern": "handover",
+    "keylessDays": 133
+   }
+  },
+  {
+   "account": "tester.near",
+   "soldAt": "2021-09-04",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 46906147,
+     "time": 1630723413654
+    },
+    "daysAgo": 1892,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "time": 1616764783460
+    },
+    "pattern": "handover",
+    "keylessDays": 162
+   }
+  },
+  {
+   "account": "90.near",
+   "soldAt": "2021-09-16",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 47867753,
+     "time": 1631763315367
+    },
+    "daysAgo": 1880,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1622337562012
+    },
+    "pattern": "handover",
+    "keylessDays": 109
+   }
+  },
+  {
+   "account": "cap.near",
+   "soldAt": "2021-09-16",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 47868508,
+     "time": 1631764116123
+    },
+    "daysAgo": 1880,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616597612645
+    },
+    "pattern": "handover",
+    "keylessDays": 176
+   }
+  },
+  {
+   "account": "k1.near",
+   "soldAt": "2021-09-16",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 47868976,
+     "time": 1631764610303
+    },
+    "daysAgo": 1880,
+    "recent": false,
+    "previousKeys": 8,
+    "oldRemoved": {
+     "time": 1631243942262
+    },
+    "pattern": "handover",
+    "keylessDays": 6
+   }
+  },
+  {
+   "account": "1-1.near",
+   "soldAt": "2021-09-27",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 48771837,
+     "time": 1632732386508
+    },
+    "daysAgo": 1869,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "height": 33059987,
+     "time": 1616701333224
+    },
+    "pattern": "handover",
+    "keylessDays": 186
+   }
+  },
+  {
+   "account": "demon.near",
+   "soldAt": "2021-10-13",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 50098484,
+     "time": 1634145034064
+    },
+    "daysAgo": 1853,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "time": 1621227760179
+    },
+    "pattern": "handover",
+    "keylessDays": 150
+   }
+  },
+  {
+   "account": "sai_1102.near",
+   "soldAt": "2021-10-24",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 50989139,
+     "time": 1635087861988
+    },
+    "daysAgo": 1842,
+    "recent": false,
+    "previousKeys": 98,
+    "oldRemoved": {
+     "time": 1634568831865
+    },
+    "pattern": "handover",
+    "keylessDays": 6
+   }
+  },
+  {
+   "account": "trump2024.near",
+   "soldAt": "2021-10-31",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "fortnite.near",
+   "soldAt": "2021-10-31",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 51530718,
+     "time": 1635680902246
+    },
+    "daysAgo": 1835,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1618293733336
+    },
+    "pattern": "handover",
+    "keylessDays": 201
+   }
+  },
+  {
+   "account": "top5.near",
+   "soldAt": "2021-10-31",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 51530921,
+     "time": 1635681124562
+    },
+    "daysAgo": 1835,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1624095613740
+    },
+    "pattern": "handover",
+    "keylessDays": 134
+   }
+  },
+  {
+   "account": "piggybank.near",
+   "soldAt": "2021-11-07",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 52060684,
+     "time": 1636255062091
+    },
+    "daysAgo": 1828,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1619864538682
+    },
+    "pattern": "handover",
+    "keylessDays": 190
+   }
+  },
+  {
+   "account": "manchester_united.near",
+   "soldAt": "2021-11-26",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 53639305,
+     "time": 1637947271926
+    },
+    "daysAgo": 1809,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "height": 38286748,
+     "time": 1621969373439
+    },
+    "pattern": "handover",
+    "keylessDays": 185
+   }
+  },
+  {
+   "account": "poop.near",
+   "soldAt": "2021-12-02",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54164858,
+     "time": 1638489383571
+    },
+    "daysAgo": 1802,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "time": 1638489483967
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "elv.near",
+   "soldAt": "2021-12-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54842310,
+     "time": 1639187290166
+    },
+    "daysAgo": 1794,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621591783314
+    },
+    "pattern": "handover",
+    "keylessDays": 204
+   }
+  },
+  {
+   "account": "metanear.near",
+   "soldAt": "2021-12-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54842526,
+     "time": 1639187504602
+    },
+    "daysAgo": 1794,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1636032904368
+    },
+    "pattern": "handover",
+    "keylessDays": 37
+   }
+  },
+  {
+   "account": "160.near",
+   "soldAt": "2021-12-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54888111,
+     "time": 1639233926975
+    },
+    "daysAgo": 1794,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1626694424600
+    },
+    "pattern": "handover",
+    "keylessDays": 145
+   }
+  },
+  {
+   "account": "stakepool.near",
+   "soldAt": "2021-12-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54888258,
+     "time": 1639234081261
+    },
+    "daysAgo": 1794,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1633258888159
+    },
+    "pattern": "handover",
+    "keylessDays": 69
+   }
+  },
+  {
+   "account": "marketplace.bet.near",
+   "soldAt": "2021-12-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 54888439,
+     "time": 1639234274620
+    },
+    "daysAgo": 1794,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1616358482252
+    },
+    "pattern": "handover",
+    "keylessDays": 265
+   }
+  },
+  {
+   "account": "john.near",
+   "soldAt": "2021-12-13",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "nfc.near",
+   "soldAt": "2021-12-13",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 55051194,
+     "time": 1639402058422
+    },
+    "daysAgo": 1792,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1616583494456
+    },
+    "pattern": "handover",
+    "keylessDays": 264
+   }
+  },
+  {
+   "account": "four.near",
+   "soldAt": "2021-12-13",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "ethereums.near",
+   "soldAt": "2021-12-15",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "gmail.near",
+   "soldAt": "2021-12-15",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 154950235,
+     "time": 1752337369683
+    },
+    "daysAgo": 485,
+    "recent": false,
+    "previousKeys": 11,
+    "oldRemoved": {
+     "time": 1752337369683
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "liv.near",
+   "soldAt": "2021-12-15",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 55210565,
+     "time": 1639570225310
+    },
+    "daysAgo": 1790,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621624457801
+    },
+    "pattern": "handover",
+    "keylessDays": 208
+   }
+  },
+  {
+   "account": "wiw.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 65332965,
+     "time": 1652237356646
+    },
+    "daysAgo": 1643,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616598006655
+    },
+    "pattern": "handover",
+    "keylessDays": 412
+   }
+  },
+  {
+   "account": "gag.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 65333099,
+     "time": 1652237534584
+    },
+    "daysAgo": 1643,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616598177690
+    },
+    "pattern": "handover",
+    "keylessDays": 412
+   }
+  },
+  {
+   "account": "blm.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 65333187,
+     "time": 1652237652502
+    },
+    "daysAgo": 1643,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616598052896
+    },
+    "pattern": "handover",
+    "keylessDays": 412
+   }
+  },
+  {
+   "account": "1xbet.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "wsx.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 65333391,
+     "time": 1652237913658
+    },
+    "daysAgo": 1643,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621586377423
+    },
+    "pattern": "handover",
+    "keylessDays": 355
+   }
+  },
+  {
+   "account": "fbr.near",
+   "soldAt": "2022-05-11",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 65333464,
+     "time": 1652238007086
+    },
+    "daysAgo": 1643,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1623540286242
+    },
+    "pattern": "handover",
+    "keylessDays": 332
+   }
+  },
+  {
+   "account": "0xdev.near",
+   "soldAt": "2022-05-18",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "stfu.near",
+   "soldAt": "2022-05-23",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 66173199,
+     "time": 1653272388222
+    },
+    "daysAgo": 1631,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1633352299254
+    },
+    "pattern": "handover",
+    "keylessDays": 231
+   }
+  },
+  {
+   "account": "judo.near",
+   "soldAt": "2022-05-23",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 66187453,
+     "time": 1653289305546
+    },
+    "daysAgo": 1631,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "time": 1631231061944
+    },
+    "pattern": "handover",
+    "keylessDays": 255
+   }
+  },
+  {
+   "account": "1204.near",
+   "soldAt": "2022-05-25",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 66367177,
+     "time": 1653515912472
+    },
+    "daysAgo": 1628,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1631463168700
+    },
+    "pattern": "handover",
+    "keylessDays": 255
+   }
+  },
+  {
+   "account": "im-in.near",
+   "soldAt": "2022-05-25",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 66367239,
+     "time": 1653515984934
+    },
+    "daysAgo": 1628,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1644264623530
+    },
+    "pattern": "handover",
+    "keylessDays": 107
+   }
+  },
+  {
+   "account": "1111nazar.near",
+   "soldAt": "2022-06-05",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 67047590,
+     "time": 1654388545977
+    },
+    "daysAgo": 1618,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "time": 1640608202457
+    },
+    "pattern": "handover",
+    "keylessDays": 159
+   }
+  },
+  {
+   "account": "complete.near",
+   "soldAt": "2022-06-18",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68011713,
+     "time": 1655585595331
+    },
+    "daysAgo": 1605,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616701682783
+    },
+    "pattern": "handover",
+    "keylessDays": 450
+   }
+  },
+  {
+   "account": "traded.near",
+   "soldAt": "2022-06-18",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68011812,
+     "time": 1655585719144
+    },
+    "daysAgo": 1604,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1623152886481
+    },
+    "pattern": "handover",
+    "keylessDays": 375
+   }
+  },
+  {
+   "account": "spook.near",
+   "soldAt": "2022-06-18",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68011890,
+     "time": 1655585813654
+    },
+    "daysAgo": 1604,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1617423404206
+    },
+    "pattern": "handover",
+    "keylessDays": 442
+   }
+  },
+  {
+   "account": "monopoly.near",
+   "soldAt": "2022-06-18",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68011945,
+     "time": 1655585882227
+    },
+    "daysAgo": 1604,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1652871911988
+    },
+    "pattern": "handover",
+    "keylessDays": 31
+   }
+  },
+  {
+   "account": "explored.near",
+   "soldAt": "2022-06-18",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68012016,
+     "time": 1655585972315
+    },
+    "daysAgo": 1604,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1623079465871
+    },
+    "pattern": "handover",
+    "keylessDays": 376
+   }
+  },
+  {
+   "account": "sass.near",
+   "soldAt": "2022-06-21",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 68183825,
+     "time": 1655795888969
+    },
+    "daysAgo": 1602,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1620439481011
+    },
+    "pattern": "handover",
+    "keylessDays": 409
+   }
+  },
+  {
+   "account": "playerone.near",
+   "soldAt": "2022-07-06",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "soop.near",
+   "soldAt": "2022-07-26",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 70687545,
+     "time": 1658842417647
+    },
+    "daysAgo": 1567,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621586214884
+    },
+    "pattern": "handover",
+    "keylessDays": 431
+   }
+  },
+  {
+   "account": "snkrs.near",
+   "soldAt": "2022-07-26",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 70687652,
+     "time": 1658842550651
+    },
+    "daysAgo": 1567,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "time": 1631522020443
+    },
+    "pattern": "handover",
+    "keylessDays": 316
+   }
+  },
+  {
+   "account": "silicon-valley.near",
+   "soldAt": "2022-07-26",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 70687711,
+     "time": 1658842622038
+    },
+    "daysAgo": 1567,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1623071791248
+    },
+    "pattern": "handover",
+    "keylessDays": 414
+   }
+  },
+  {
+   "account": "linus.near",
+   "soldAt": "2022-07-26",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 70687807,
+     "time": 1658842741768
+    },
+    "daysAgo": 1567,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1623070297525
+    },
+    "pattern": "handover",
+    "keylessDays": 414
+   }
+  },
+  {
+   "account": "humanism.near",
+   "soldAt": "2022-07-29",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 70912747,
+     "time": 1659127751163
+    },
+    "daysAgo": 1563,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621586862633
+    },
+    "pattern": "handover",
+    "keylessDays": 435
+   }
+  },
+  {
+   "account": "allfor.near",
+   "soldAt": "2022-08-03",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 71244735,
+     "time": 1659543965224
+    },
+    "daysAgo": 1559,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1620940666740
+    },
+    "pattern": "handover",
+    "keylessDays": 447
+   }
+  },
+  {
+   "account": "fairlottery.near",
+   "soldAt": "2022-08-12",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 71832940,
+     "time": 1660293682470
+    },
+    "daysAgo": 1550,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621592147159
+    },
+    "pattern": "handover",
+    "keylessDays": 448
+   }
+  },
+  {
+   "account": "fucktoo.near",
+   "soldAt": "2022-08-12",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 71832983,
+     "time": 1660293738706
+    },
+    "daysAgo": 1550,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1621585993209
+    },
+    "pattern": "handover",
+    "keylessDays": 448
+   }
+  },
+  {
+   "account": "b1tc01n.near",
+   "soldAt": "2022-10-20",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 112455089,
+     "time": 1707472714686
+    },
+    "daysAgo": 1004,
+    "recent": false,
+    "previousKeys": 16,
+    "oldRemoved": {
+     "time": 1705622847978
+    },
+    "pattern": "handover",
+    "keylessDays": 21
+   }
+  },
+  {
+   "account": "1469.near",
+   "soldAt": "2022-11-30",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "covid.near",
+   "soldAt": "2023-07-04",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 95659304,
+     "time": 1688446500850
+    },
+    "daysAgo": 1224,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1616701639849
+    },
+    "pattern": "handover",
+    "keylessDays": 830
+   }
+  },
+  {
+   "account": "ruble.near",
+   "soldAt": "2023-07-04",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 95702651,
+     "time": 1688496334059
+    },
+    "daysAgo": 1224,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1667421857803
+    },
+    "pattern": "handover",
+    "keylessDays": 244
+   }
+  }
+ ],
+ "stayed": [
+  {
+   "account": "aurora",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 195119959,
+     "time": 1776867750351
+    },
+    "daysAgo": 201,
+    "recent": false,
+    "previousKeys": 9,
+    "oldRemoved": {
+     "time": 1776867910940
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "near",
+   "verdict": {
+    "account": "near",
+    "error": "near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "wrap.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "v2.ref-finance.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "ref-finance.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 45549719,
+     "time": 1629300614685
+    },
+    "daysAgo": 1909,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1671977123050
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "token.v2.ref-finance.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "linear-protocol.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "meta-pool.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "meta-token.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 45808565,
+     "time": 1629570006352
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "x.paras.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 91160808,
+     "time": 1683296100774
+    },
+    "daysAgo": 1284,
+    "recent": false,
+    "previousKeys": 5,
+    "oldRemoved": {
+     "height": 91160886,
+     "time": 1683296189581
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "paras.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 91150699,
+     "time": 1683286985289
+    },
+    "daysAgo": 1284,
+    "recent": false,
+    "previousKeys": 22,
+    "oldRemoved": {
+     "time": 1683287652041
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "mintbase1.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "mintbase.near",
+   "verdict": {
+    "account": "mintbase.near",
+    "error": "mintbase.near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "sputnik-dao.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 38875073,
+     "time": 1622560541482
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "social.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 86205122,
+     "time": 1677548416055
+    },
+    "daysAgo": 1350,
+    "recent": false,
+    "previousKeys": 4,
+    "oldRemoved": {
+     "time": 1677548514391
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "contract.main.burrow.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "burrow.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 49043598,
+     "time": 1633023002939
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "token.burrow.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "token.sweat",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "sweat.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "hot.tg",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 111730987,
+     "time": 1706661558615
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "game.hot.tg",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 111734712,
+     "time": 1706668818845
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "intents.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "v1.signer",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "tkn.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "app.nearcrowd.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "nearcrowd.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "octopus-registry.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 49499984,
+     "time": 1633508709127
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "nearx.stader-labs.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "stader-labs.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 69181981,
+     "time": 1657020127081
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "asset-manager.orderly-network.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 80347055,
+     "time": 1670686316710
+    },
+    "daysAgo": 1430,
+    "recent": false,
+    "previousKeys": 2,
+    "oldRemoved": {
+     "height": 80348790,
+     "time": 1670688344626
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "orderly-network.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 80347494,
+     "time": 1670690686918
+    },
+    "daysAgo": 1430,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1670691935116
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "pulse.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "nearweek.near",
+   "verdict": {
+    "account": "nearweek.near",
+    "error": "nearweek.near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "near-foundation.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 39106618,
+     "time": 1622791481981
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "nf-finance.near",
+   "verdict": {
+    "account": "nf-finance.near",
+    "error": "nf-finance.near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "foundation.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "pagoda.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 48615991,
+     "time": 1632568003253
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "nearpay.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 50244178,
+     "time": 1634300063984
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "flux-dao.near",
+   "verdict": {
+    "kind": "missing"
+   }
+  },
+  {
+   "account": "skyward.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "token.skyward.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "berryclub.ek.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "farm.berryclub.ek.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "tenk.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 51228041,
+     "time": 1635347428308
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "nearnames.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 39467832,
+     "time": 1623152326265
+    },
+    "daysAgo": 1980,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1623152326265
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "ilblackdragon.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 47850578,
+     "time": 1631745264473
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "root.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "illia.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "erik.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 82731104,
+     "time": 1673468966622
+    },
+    "daysAgo": 1398,
+    "recent": false,
+    "previousKeys": 10,
+    "oldRemoved": {
+     "time": 1673469239133
+    },
+    "pattern": "swap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "mike.near",
+   "verdict": {
+    "account": "mike.near",
+    "error": "mike.near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "vgrichina.near",
+   "verdict": {
+    "kind": "missing"
+   }
+  },
+  {
+   "account": "cameron.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "chadoh.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "evgenykuzyakov.near",
+   "verdict": {
+    "kind": "missing"
+   }
+  },
+  {
+   "account": "kendall.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "pinkpanda.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 85228220,
+     "time": 1676401148841
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "zavodil.near",
+   "verdict": {
+    "account": "zavodil.near",
+    "error": "zavodil.near had too many keys to read from archival state"
+   }
+  },
+  {
+   "account": "calimero.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 73411136,
+     "time": 1662240635530
+    },
+    "daysAgo": 1528,
+    "recent": false,
+    "previousKeys": 2,
+    "oldRemoved": {
+     "height": 96859928,
+     "time": 1689794870536
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "proximity.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 40269268,
+     "time": 1623952794638
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "lockup.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "nearkat.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 41270590,
+     "time": 1624954446524
+    },
+    "daysAgo": 1959,
+    "recent": false,
+    "previousKeys": 3,
+    "oldRemoved": {
+     "height": 103427762,
+     "time": 1697371584554
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "nearlend.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 55125799,
+     "time": 1639480986930
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "bridge.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "factory.bridge.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "client.bridge.near",
+   "verdict": {
+    "kind": "changed",
+    "at": {
+     "height": 77705107,
+     "time": 1667562039785
+    },
+    "daysAgo": 1466,
+    "recent": false,
+    "previousKeys": 1,
+    "oldRemoved": {
+     "time": 1669811656199
+    },
+    "pattern": "overlap",
+    "keylessDays": 0
+   }
+  },
+  {
+   "account": "nearnauts.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": {
+     "height": 50172171,
+     "time": 1634223186991
+    },
+    "fromCreation": true
+   }
+  },
+  {
+   "account": "rainbowbridge.near",
+   "verdict": {
+    "kind": "unchanged",
+    "since": null,
+    "fromCreation": false
+   }
+  },
+  {
+   "account": "staking-farm.near",
+   "verdict": {
+    "kind": "missing"
+   }
+  },
+  {
+   "account": "astro-stakers.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "zavodil.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "figment.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "epic.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "binancenode1.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "blockdaemon.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "kiln.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "allnodes.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "staked.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "p2p-org.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  },
+  {
+   "account": "dokiacapital.poolv1.near",
+   "verdict": {
+    "kind": "locked",
+    "contract": true
+   }
+  }
+ ]
+}
