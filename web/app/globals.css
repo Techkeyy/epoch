@@ -179,6 +179,7 @@ pre { margin: 0; background: #1f1d19; color: #ebe6da; padding: 20px; border-radi
   .wrap, .top, .hero { padding-left: 16px; padding-right: 16px; }
   .top nav a:not(:last-child) { display: none; }
   .ask { flex-direction: column; }
+  .ask input { flex: none; }
   .record { padding: 20px 16px 16px; }
   .register li { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; }
   .sides { grid-template-columns: 1fr; }
