@@ -86,7 +86,7 @@ export function Record({ answer }: { answer: Answer }) {
     <article className={`record tone-${e.tone}`}>
       <header className="record-head">
         <span className="kicker">Record of control</span>
-        <span className="badge">{answer.verdict.kind === 'locked' ? 'Locked' : BADGE[e.tone]}</span>
+        <span className="stamp" aria-label={answer.verdict.kind === 'locked' ? 'Locked' : BADGE[e.tone]}>{answer.verdict.kind === 'locked' ? 'Locked' : BADGE[e.tone]}</span>
       </header>
       <h2 className="record-account">{answer.account}</h2>
       <p className="record-headline">{e.headline}</p>

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { ACCOUNT_ID } from '@/lib/explain';
 import { Record, RecordSkeleton, type Answer } from './Record';
+import { Clerk, type Mood } from './Clerk';
 import saved from '@/lib/example.json';
 
 type State =
@@ -23,6 +24,10 @@ export function Lookup({ initial, children }: { initial: string; children: React
   const [live, setLive] = useState(false);
   const [mine, setMine] = useState(!!initial);
   const asked = useRef('');
+  const [focused, setFocused] = useState(false);
+  const [typing, setTyping] = useState(false);
+  const [look, setLook] = useState(0);
+  const quiet = useRef<ReturnType<typeof setTimeout>>(undefined);
   const panel = useRef<HTMLDivElement>(null);
 
   const run = useCallback(async (raw: string, own: boolean) => {
@@ -64,6 +69,24 @@ export function Lookup({ initial, children }: { initial: string; children: React
     void run(initial || EXAMPLE, !!initial);
   }, [initial, run]);
 
+  const typed = value.trim().toLowerCase();
+  const shownAccount = state.kind === 'done' ? state.answer.account : state.account;
+  const verdictMood: Record<string, Mood> = { changed: 'changed', unchanged: 'same', locked: 'locked', missing: 'missing' };
+  const mood: Mood =
+    state.kind === 'loading' && mine
+      ? 'checking'
+      : focused && typing
+        ? 'typing'
+        : focused && typed && typed !== shownAccount && ACCOUNT_ID.test(typed)
+          ? 'valid'
+          : state.kind === 'error'
+            ? 'error'
+            : state.kind === 'done'
+              ? verdictMood[state.answer.verdict.kind] ?? 'idle'
+              : 'idle';
+  // A new answer gets a fresh stamp.
+  const clerkKey = state.kind === 'done' ? `${state.answer.account}-${mine}` : 'wait';
+
   return (
     <section className="hero">
       <div className="hero-text">
@@ -82,7 +105,16 @@ export function Lookup({ initial, children }: { initial: string; children: React
           <input
             id="account"
             value={value}
-            onChange={(e) => setValue(e.target.value)}
+            onChange={(e) => {
+              setValue(e.target.value);
+              setTyping(true);
+              clearTimeout(quiet.current);
+              quiet.current = setTimeout(() => setTyping(false), 900);
+              const pos = e.target.selectionStart ?? e.target.value.length;
+              setLook(Math.min(1, pos / 22) * 2 - 1);
+            }}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
             placeholder="account.near"
             autoCapitalize="none"
             autoCorrect="off"
@@ -107,6 +139,7 @@ export function Lookup({ initial, children }: { initial: string; children: React
             </button>
           ))}
         </p>
+        <Clerk key={clerkKey} mood={mood} look={look} />
         <p className="quiet">No wallet, no sign-in. Read from NEAR mainnet as you ask.</p>
       </div>
 

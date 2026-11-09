@@ -130,7 +130,10 @@ export function Lifelines({ report, cursor, onCursor, animate = true }: { report
           return (
             <g key={l.key + i} className={l.now ? 'line now' : 'line before'}>
               <line x1={x1} x2={Math.max(x1 + 0.5, x2)} y1={y} y2={y} pathLength={1} style={{ animationDelay: `${120 + i * 60}ms` }} />
-              <circle cx={x1} cy={y} r={3} style={{ animationDelay: `${120 + i * 60}ms` }} />
+              <g className="key-glyph" transform={`translate(${x1} ${y})`} style={{ animationDelay: `${120 + i * 60}ms` }}>
+                <circle cx={-9} cy={0} r={3.6} />
+                <path d="M-5.4 0 H0 M-2.6 0 V3" />
+              </g>
               {l.to && <circle cx={x2} cy={y} r={3} className="end" style={{ animationDelay: `${420 + i * 60}ms` }} />}
               <title>{`${l.key.startsWith('ed25519:') ? shortKey(l.key) : l.key}: ${l.from > start ? `added ${date(l.from)}` : 'added earlier'}${l.to ? `, removed ${date(l.to)}` : ', in control today'}`}</title>
             </g>
