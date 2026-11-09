@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+*.log
+data/
+director.md
+.claude/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo
+web/benchmark/cache/

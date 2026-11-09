@@ -1,0 +1,442 @@
+{
+ "source": "Sold: every successful acquire() on c.nearbet.near (near.bet), read from mainnet. Stayed: long-running projects and public figures whose identity carried on in public; assumed, not proven, to have kept control.",
+ "sold": [
+  {
+   "account": "tinsman.near",
+   "soldAt": "2021-07-22T13:20:29.323Z",
+   "tx": "5q2JBSK2VQ1mBpLNeDhKzNjxaFRMpF3z1KbakRTgmXpy"
+  },
+  {
+   "account": "crow.near",
+   "soldAt": "2021-03-24T10:19:10.912Z",
+   "tx": "EhrS3Hjant27oW33cU1X5C7BcJfRCDZmZrVP6R4rNisK"
+  },
+  {
+   "account": "o0.near",
+   "soldAt": "2021-03-28T00:42:38.594Z",
+   "tx": "AxrttysRCBknT1DBFi8BPccezJyYicETehVfQgncvomF"
+  },
+  {
+   "account": "100near.near",
+   "soldAt": "2021-04-05T17:32:14.377Z",
+   "tx": "roVxGQHtXwbaqqakS1CQQ2x9zobfPn2kZ1j2SbpujEy"
+  },
+  {
+   "account": "crocodile.near",
+   "soldAt": "2021-04-07T17:45:41.449Z",
+   "tx": "C4oVAcybhovYQLp6rum1qbhVC2G7zXuZvN2XekehqMnT"
+  },
+  {
+   "account": "economist.near",
+   "soldAt": "2021-04-12T03:05:08.725Z",
+   "tx": "Gr3TQ4yoiYsUqjP4zkwHfZYeQxpuAf8zJgNWAkdQESwX"
+  },
+  {
+   "account": "justeat.near",
+   "soldAt": "2021-04-17T07:45:17.139Z",
+   "tx": "Cv92o8jHQcsAVaRLLjjuF3a1fDgXCjNc1dmu4ZioXc4n"
+  },
+  {
+   "account": "bitcoinwallet.near",
+   "soldAt": "2021-05-20T15:41:49.061Z",
+   "tx": "78FkVkve2T1BezzfFoDNRJtpDvMJXDRQgb6pwvYe3CJo"
+  },
+  {
+   "account": "mariya.near",
+   "soldAt": "2021-05-21T17:37:00.970Z",
+   "tx": "JDyJbxMU8RNhcUjLokhRKpgtAED3wuURxkULVF9qT4xs"
+  },
+  {
+   "account": "veryfar.near",
+   "soldAt": "2021-05-21T20:20:18.237Z",
+   "tx": "JBMVJRK5jZW3UpvzQP9oTZLFpX3PyHuPpMePobGEGPKx"
+  },
+  {
+   "account": "near.near",
+   "soldAt": "2021-06-02T00:56:23.503Z",
+   "tx": "8ftLi94yDS3rjJMRTAxbRQhyiyWjkAej1xtp7AAYY2dz"
+  },
+  {
+   "account": "ilove.near",
+   "soldAt": "2021-07-28T07:50:07.512Z",
+   "tx": "AtJx8sp4zEMBQA1AVqF1QRNVFwbeJdbYqRjKqBJPMkch"
+  },
+  {
+   "account": "shopify.near",
+   "soldAt": "2021-08-02T03:15:37.890Z",
+   "tx": "DrjdB9NX8s9p4mmdkHDbnnM29kE8Da2WqjRJTrwVc6vH"
+  },
+  {
+   "account": "ruby.near",
+   "soldAt": "2021-08-13T13:24:46.251Z",
+   "tx": "4DUTzMMCafV8yEhr24pZPnJAB4ykBYjVRoMjhWV5Genc"
+  },
+  {
+   "account": "go-to.near",
+   "soldAt": "2021-08-25T06:46:12.391Z",
+   "tx": "2A4vVMx1y9yX8sghpqTWeDRrekS4KUp9uwCQneQHvfzV"
+  },
+  {
+   "account": "ashley.near",
+   "soldAt": "2021-08-25T06:50:07.019Z",
+   "tx": "HfdvvARXP7MTYtsZnnH2xee64MfBEuyNFUr53yBtQmMD"
+  },
+  {
+   "account": "tester.near",
+   "soldAt": "2021-09-04T02:43:33.654Z",
+   "tx": "CyMGGy359e8SJeWH8VgCkDJqEE6qCZ2XMeeqQbNmXMo7"
+  },
+  {
+   "account": "90.near",
+   "soldAt": "2021-09-16T03:35:15.367Z",
+   "tx": "HbhYB4xfYjpqKKWRcAEuRDTM1boSB3SDn2NEXCr3FpGv"
+  },
+  {
+   "account": "cap.near",
+   "soldAt": "2021-09-16T03:48:36.123Z",
+   "tx": "4Nn67jXaB9mDPzMY6UGtceD1JajuCvMkzc7kUCpNtBm7"
+  },
+  {
+   "account": "k1.near",
+   "soldAt": "2021-09-16T03:56:50.303Z",
+   "tx": "AZgqFJfNkU48Ydtob2twcowykQoEL7pnYCxVvWyDy9aa"
+  },
+  {
+   "account": "1-1.near",
+   "soldAt": "2021-09-27T09:18:12.254Z",
+   "tx": "CJJpAXobZGnPHyHkNVAFB5AZn7BPwZKLZVPYQioAkAsL"
+  },
+  {
+   "account": "demon.near",
+   "soldAt": "2021-10-13T17:10:34.063Z",
+   "tx": "3wcKgW1j6MB9W152NwSuaFKQJ9LFPY9gmwWVo8H2E2tG"
+  },
+  {
+   "account": "sai_1102.near",
+   "soldAt": "2021-10-24T15:04:21.988Z",
+   "tx": "HfLAUGT6mABkzvgJPBLqthLzG7de5AbNHX6HwhEoPmdx"
+  },
+  {
+   "account": "trump2024.near",
+   "soldAt": "2021-10-31T11:46:34.649Z",
+   "tx": "W8FXdPvBoPJzZvGgzLGRLSa1hrTQq9vGBXbyEjEUGc5"
+  },
+  {
+   "account": "fortnite.near",
+   "soldAt": "2021-10-31T11:48:22.245Z",
+   "tx": "A3yUsKx31VDiyZMJQxD2vD7rqp8skgLyFGd4zLQYFztj"
+  },
+  {
+   "account": "top5.near",
+   "soldAt": "2021-10-31T11:52:04.562Z",
+   "tx": "5VEp6MCMVEJCKcYdfDHhNKB3qbu6LFRfFnACVHkzSfZ9"
+  },
+  {
+   "account": "piggybank.near",
+   "soldAt": "2021-11-07T03:17:42.091Z",
+   "tx": "8oMDgwqxjZenxs4Jo2V2QC1cUH5AuU6VLf4WwLvLi9cN"
+  },
+  {
+   "account": "manchester_united.near",
+   "soldAt": "2021-11-26T18:20:08.599Z",
+   "tx": "DQarTB7QQjtw4NehitwiVrkAq1nqwbctCZNRR4KXg5jr"
+  },
+  {
+   "account": "poop.near",
+   "soldAt": "2021-12-02T23:54:12.358Z",
+   "tx": "6fBSQmZghDJsXkKH8SCuEBca18vyNyaTdDP7d8TBCqPL"
+  },
+  {
+   "account": "elv.near",
+   "soldAt": "2021-12-11T01:48:10.166Z",
+   "tx": "G55q6gNsGS4jfNdbT31ERP92GfQFpGN5MZvMTC7DvsNA"
+  },
+  {
+   "account": "metanear.near",
+   "soldAt": "2021-12-11T01:51:44.602Z",
+   "tx": "73M9ugUEa4Ud6GSBpyMzY3RFSrk48qAdr5bu7U42yuTc"
+  },
+  {
+   "account": "160.near",
+   "soldAt": "2021-12-11T14:45:26.974Z",
+   "tx": "7EkHqCXxToFPnnLJzP7EkR6y5DDggUrLXAb4YPSSNetF"
+  },
+  {
+   "account": "stakepool.near",
+   "soldAt": "2021-12-11T14:48:01.261Z",
+   "tx": "4KNoaWzfNWGprcWsWgEkCNkXkqvGV8rexWkoMuEMPZqd"
+  },
+  {
+   "account": "marketplace.bet.near",
+   "soldAt": "2021-12-11T14:51:14.620Z",
+   "tx": "84a8zd9ZSMHNm4WUkm2QVUSMdq335FL5Ar4BuhQnFmhe"
+  },
+  {
+   "account": "john.near",
+   "soldAt": "2021-12-13T13:24:18.322Z",
+   "tx": "93YqQQxyarGcSkV5KAwHE21w6Z8H1fK3r5VowSGEG5xE"
+  },
+  {
+   "account": "nfc.near",
+   "soldAt": "2021-12-13T13:27:38.421Z",
+   "tx": "3eof12SLThVxKz43Ce8Pw9Yrv8DHzfqxKZPBLs7CwYzF"
+  },
+  {
+   "account": "four.near",
+   "soldAt": "2021-12-13T13:29:28.471Z",
+   "tx": "3oPi3Uw2Yzc4kZ6fVEUPyGKzQ41aEZdNXbZoPuQyXmT6"
+  },
+  {
+   "account": "ethereums.near",
+   "soldAt": "2021-12-15T11:56:44.751Z",
+   "tx": "D3whyVvNxrjd7AMBreupgcwfxuWVgfjMmeDbuX2LsLKp"
+  },
+  {
+   "account": "gmail.near",
+   "soldAt": "2021-12-15T12:04:10.715Z",
+   "tx": "AiYaHHxzuht6Kpcq96mtB9jtTPs9yexcbXntxBtP1eC6"
+  },
+  {
+   "account": "liv.near",
+   "soldAt": "2021-12-15T12:10:25.309Z",
+   "tx": "k4UsYaLdT9yP2mQ5kpbnWUsMGt7bEvS9iMkDH2H8nH6"
+  },
+  {
+   "account": "wiw.near",
+   "soldAt": "2022-05-11T02:49:16.646Z",
+   "tx": "CfUm15f4sa6vqU5TE6n54E7Hg5i7N37MMmXu37G9BYXj"
+  },
+  {
+   "account": "gag.near",
+   "soldAt": "2022-05-11T02:52:14.584Z",
+   "tx": "2nz466mRoZQoBTKFp6i8s5sVXv2gVpkAiLNcko7eSUhP"
+  },
+  {
+   "account": "blm.near",
+   "soldAt": "2022-05-11T02:54:12.501Z",
+   "tx": "DgWnccJDMNmZRVDZrxFGXKwK3bBctPj1ibygUJtb21KR"
+  },
+  {
+   "account": "1xbet.near",
+   "soldAt": "2022-05-11T02:56:06.652Z",
+   "tx": "BVFapPvuJPawbN5Y3xefMRBuRKu4ZXjNc46W3uxEzLPG"
+  },
+  {
+   "account": "wsx.near",
+   "soldAt": "2022-05-11T02:58:33.658Z",
+   "tx": "5nX14oJxqfbgFCV8QqsL6Dmu3cxELAGJJ2xZhhBwKaCE"
+  },
+  {
+   "account": "fbr.near",
+   "soldAt": "2022-05-11T03:00:07.086Z",
+   "tx": "FqYZyzFdt9C9c2SERqmiU8bz8hP35NSbUQNMpgspghPg"
+  },
+  {
+   "account": "0xdev.near",
+   "soldAt": "2022-05-18T03:02:44.995Z",
+   "tx": "HpyaA7C9Ref1rjag1sqaGV1i5Nno6dxXnKcr5Fu3kLNK"
+  },
+  {
+   "account": "stfu.near",
+   "soldAt": "2022-05-23T02:19:48.221Z",
+   "tx": "A7vfsSJ9LwxtaeNgZPqsFTxX1Dg9Kcxu3fnWjLYK6DAu"
+  },
+  {
+   "account": "judo.near",
+   "soldAt": "2022-05-23T07:01:45.546Z",
+   "tx": "3EWcJGwrQHJ5B2h7qdGipHp92cmFRYH7VRPpsMyyq498"
+  },
+  {
+   "account": "1204.near",
+   "soldAt": "2022-05-25T21:58:32.472Z",
+   "tx": "4hoPYrKCgqfN2iLRAzFXZH29PDduBaD93ZLhsojR9MYY"
+  },
+  {
+   "account": "im-in.near",
+   "soldAt": "2022-05-25T21:59:44.934Z",
+   "tx": "3KTPVNiU8LSbgQCT3DdqWnJ6mCCdVhESCY7DtSesbZeU"
+  },
+  {
+   "account": "1111nazar.near",
+   "soldAt": "2022-06-05T00:22:25.977Z",
+   "tx": "4pkC2QJcDdW3bPZKaBz3YYtaBcaZDhDUa2K7KTn5wUqs"
+  },
+  {
+   "account": "complete.near",
+   "soldAt": "2022-06-18T20:53:15.331Z",
+   "tx": "7DQUgXzt48t9Gr5KVdNew4BPXFDenLG3rfjcY8EQ1qd6"
+  },
+  {
+   "account": "traded.near",
+   "soldAt": "2022-06-18T20:55:19.143Z",
+   "tx": "BKMjvmUvqy76ktP7CTSYmtityHnZZt1RzcuXFgcaWRZq"
+  },
+  {
+   "account": "spook.near",
+   "soldAt": "2022-06-18T20:56:53.653Z",
+   "tx": "DdS9viNqDqvraB8EwgFE9pnTWR2AfEiA6dyppyWGPDzL"
+  },
+  {
+   "account": "monopoly.near",
+   "soldAt": "2022-06-18T20:58:02.227Z",
+   "tx": "67RHpBDFmm478awU2hjZaJNXJg4zV5FjtZ8ZS317c1BB"
+  },
+  {
+   "account": "explored.near",
+   "soldAt": "2022-06-18T20:59:32.315Z",
+   "tx": "AYbomj6zro9LKckGJuhGVmbxEPbCFMpKj21ibETAasWW"
+  },
+  {
+   "account": "sass.near",
+   "soldAt": "2022-06-21T07:18:08.969Z",
+   "tx": "7khhWemWYxxsYbwFZUVUBDQUMdJEyD74yXXoH7RDDNcb"
+  },
+  {
+   "account": "playerone.near",
+   "soldAt": "2022-07-06T11:27:04.146Z",
+   "tx": "BV4kowGyY2CaA6eFh7Jv7ruiiRJUBBsQsNho7svCmzcQ"
+  },
+  {
+   "account": "soop.near",
+   "soldAt": "2022-07-26T13:33:37.646Z",
+   "tx": "5CVTMCcv6733DGQEVumWcZVijMFPidvF799RrURP9EfQ"
+  },
+  {
+   "account": "snkrs.near",
+   "soldAt": "2022-07-26T13:35:50.651Z",
+   "tx": "9AKDjBXU7AamJbUKC2ii3tiS5ydJ1fLvTNmBEEEiK42Z"
+  },
+  {
+   "account": "silicon-valley.near",
+   "soldAt": "2022-07-26T13:37:02.037Z",
+   "tx": "2Pj1AwEzMMb1Bq2chq2cLxia3Y3UPPnZn9YhRd9cnoLe"
+  },
+  {
+   "account": "linus.near",
+   "soldAt": "2022-07-26T13:39:01.768Z",
+   "tx": "BsX1rKE729DCmnoinBJ1G5Hswr4ogAt1sWwrVsDaKJ1d"
+  },
+  {
+   "account": "humanism.near",
+   "soldAt": "2022-07-29T20:49:11.163Z",
+   "tx": "FyrReCvKfGcZVbKxew4EkFCKdkx7Hv1Qw4ESkMyxWqwG"
+  },
+  {
+   "account": "allfor.near",
+   "soldAt": "2022-08-03T16:26:05.223Z",
+   "tx": "6HteXdRCpBRp5LWoqwsjrg7Uw9kdJnBD5Vm5aNNddsyj"
+  },
+  {
+   "account": "fairlottery.near",
+   "soldAt": "2022-08-12T08:41:22.469Z",
+   "tx": "HwJmXmLmyQFesMGnnq1WNYPtpAQevcyXvy31mzPGbciD"
+  },
+  {
+   "account": "fucktoo.near",
+   "soldAt": "2022-08-12T08:42:18.705Z",
+   "tx": "2HnQKqNVLLoL6ythzxFjsrLbWgofgTYbENQv7ZRoHXHC"
+  },
+  {
+   "account": "b1tc01n.near",
+   "soldAt": "2022-10-20T06:32:13.536Z",
+   "tx": "45nsbAdy1dgd1m1BvHqF6ZdjpJA61vngay6kuztxtJXz"
+  },
+  {
+   "account": "1469.near",
+   "soldAt": "2022-11-30T07:30:53.537Z",
+   "tx": "3GrvtFuTRSFcJKUbCgidRyL61wNMHAvrcRWTEMUVJyti"
+  },
+  {
+   "account": "covid.near",
+   "soldAt": "2023-07-04T04:55:00.850Z",
+   "tx": "99YZChquJcyNBQMzkKCYCbemQBPsFWJYkfjRaCcEBkFX"
+  },
+  {
+   "account": "ruble.near",
+   "soldAt": "2023-07-04T18:45:34.058Z",
+   "tx": "2SAUk3dr6EjoyEx6QrPKWtjwaTU8pF8hJXrwBqtf9K2n"
+  }
+ ],
+ "stayed": [
+  "aurora",
+  "near",
+  "wrap.near",
+  "v2.ref-finance.near",
+  "ref-finance.near",
+  "token.v2.ref-finance.near",
+  "linear-protocol.near",
+  "meta-pool.near",
+  "meta-token.near",
+  "x.paras.near",
+  "paras.near",
+  "mintbase1.near",
+  "mintbase.near",
+  "sputnik-dao.near",
+  "social.near",
+  "contract.main.burrow.near",
+  "burrow.near",
+  "token.burrow.near",
+  "token.sweat",
+  "sweat.near",
+  "hot.tg",
+  "game.hot.tg",
+  "intents.near",
+  "v1.signer",
+  "tkn.near",
+  "app.nearcrowd.near",
+  "nearcrowd.near",
+  "octopus-registry.near",
+  "nearx.stader-labs.near",
+  "stader-labs.near",
+  "asset-manager.orderly-network.near",
+  "orderly-network.near",
+  "pulse.near",
+  "nearweek.near",
+  "near-foundation.near",
+  "nf-finance.near",
+  "foundation.near",
+  "pagoda.near",
+  "nearpay.near",
+  "flux-dao.near",
+  "skyward.near",
+  "token.skyward.near",
+  "berryclub.ek.near",
+  "farm.berryclub.ek.near",
+  "tenk.near",
+  "nearnames.near",
+  "ilblackdragon.near",
+  "root.near",
+  "illia.near",
+  "erik.near",
+  "mike.near",
+  "vgrichina.near",
+  "cameron.near",
+  "chadoh.near",
+  "evgenykuzyakov.near",
+  "kendall.near",
+  "pinkpanda.near",
+  "zavodil.near",
+  "calimero.near",
+  "proximity.near",
+  "lockup.near",
+  "nearkat.near",
+  "nearlend.near",
+  "bridge.near",
+  "factory.bridge.near",
+  "client.bridge.near",
+  "nearnauts.near",
+  "rainbowbridge.near",
+  "staking-farm.near",
+  "astro-stakers.poolv1.near",
+  "zavodil.poolv1.near",
+  "figment.poolv1.near",
+  "epic.poolv1.near",
+  "binancenode1.poolv1.near",
+  "blockdaemon.poolv1.near",
+  "kiln.poolv1.near",
+  "allnodes.poolv1.near",
+  "staked.poolv1.near",
+  "p2p-org.poolv1.near",
+  "dokiacapital.poolv1.near"
+ ]
+}

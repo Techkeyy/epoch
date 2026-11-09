@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: epoch-near
+    runtime: node
+    plan: starter
+    rootDir: web
+    buildCommand: npx -y pnpm@11.19.0 install --frozen-lockfile && npx -y pnpm@11.19.0 build
+    startCommand: npx next start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.0
+      # Optional. Epoch works on free public servers; a NearBlocks key only raises the daily history limit.
+      - key: NEARBLOCKS_API_KEY
+        sync: false
