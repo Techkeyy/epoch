@@ -147,6 +147,10 @@ export async function check(account: string, chain: Chain, now = Date.now()): Pr
   const startKey = full.find((k) => k.height === start)!;
   const exact = life?.find((k) => k.publicKey === startKey.publicKey && k.removed === null)?.added;
   if (exact) at.time = exact;
+  for (const k of keys) {
+    const t = life?.find((l) => l.publicKey === k.publicKey && l.removed === null)?.added;
+    if (t && k.added && k.added !== at) k.added = { ...k.added, time: t };
+  }
   const gone = life
     ?.filter((k) => k.full && k.removed !== null && (k.added ?? 0) < at.time - 1000)
     .map((k) => ({ publicKey: k.publicKey, added: k.added, removed: k.removed! }))

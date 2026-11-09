@@ -1,4 +1,8 @@
 import { Lookup } from '@/components/Lookup';
+import { NonceDecoder } from '@/components/NonceDecoder';
+import { TimeTravel } from '@/components/TimeTravel';
+import type { Report } from '@/lib/epoch';
+import saved from '@/lib/example.json';
 
 const REPO = 'https://github.com/Techkeyy/epoch';
 const SECONDEYES = 'https://secondeyes-j5ey.onrender.com';
@@ -39,35 +43,21 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ a
               Whoever holds an account’s full-access keys controls it. Replace the keys and the account belongs to
               someone else, while its name and its past carry on. Accounts are sold this way and taken over the same way.
             </p>
-            <div className="sides">
-              <div>
-                <h3>What the account shows</h3>
-                <dl>
-                  <dt>Name</dt>
-                  <dd className="mono">ruble.near</dd>
-                  <dt>History</dt>
-                  <dd>Since 2021</dd>
-                  <dt>Looks like</dt>
-                  <dd>One long-standing account</dd>
-                </dl>
-              </div>
-              <div className="side-epoch">
-                <h3>What Epoch shows</h3>
-                <dl>
-                  <dt>Earlier keys</dt>
-                  <dd>4, all removed on 2 Nov 2022</dd>
-                  <dt>No key at all</dt>
-                  <dd>244 days</dd>
-                  <dt>Current keys</dt>
-                  <dd>Since 4 Jul 2023</dd>
-                </dl>
-              </div>
-            </div>
+            <TimeTravel report={saved as unknown as Report} />
+            <p className="travel-note">Drag along a real account’s history, read from mainnet on 9 November 2026.</p>
           </div>
         </section>
 
         <section className="wrap section" id="how">
-          <h2>How it works</h2>
+          <div className="how">
+            <div>
+              <h2>How it works</h2>
+              <p className="section-lede">
+                Every NEAR key carries the date it was added, hidden in plain sight in its counter. Epoch reads it.
+              </p>
+            </div>
+            <NonceDecoder />
+          </div>
           <ol className="steps">
             <li>
               <span className="step-n">1</span>

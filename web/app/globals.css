@@ -74,7 +74,7 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .tries button:hover { text-decoration-color: currentColor; }
 .quiet { margin: 32px 0 0; font-size: 14px; color: var(--ink-3); }
 
-.hero-record { scroll-margin-top: 16px; }
+.hero-record { scroll-margin-top: 16px; min-width: 0; }
 .panel-label { margin: 0 0 12px; font-size: 14px; color: var(--ink-3); }
 
 /* The record of control */
@@ -134,14 +134,6 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .section { padding-top: 88px; }
 .section h2, .band h2 { font: 500 30px/1.2 var(--font-serif); letter-spacing: -0.01em; }
 .section-lede { margin: 16px 0 40px; font-size: 18px; color: var(--ink-2); max-width: 60ch; }
-.sides { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--sheet); border: 1px solid var(--hair); border-radius: 16px; overflow: hidden; }
-.sides > div { padding: 28px; }
-.sides > div + div { border-left: 2px solid var(--era); }
-.sides h3 { font-size: 15px; font-weight: 500; color: var(--ink-3); margin-bottom: 16px; }
-.sides dl { display: grid; grid-template-columns: 120px 1fr; gap: 12px 16px; margin: 0; }
-.sides dt { color: var(--ink-3); font-size: 15px; }
-.sides dd { margin: 0; font-size: 17px; }
-.side-epoch dd { color: var(--ink); font-weight: 500; }
 
 .steps { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .step-n { display: block; font: 400 40px/1 var(--font-serif); color: var(--ink-3); margin-bottom: 16px; }
@@ -161,18 +153,120 @@ pre { margin: 0; background: #1f1d19; color: #ebe6da; padding: 20px; border-radi
 
 .foot { margin-top: 88px; padding-top: 24px; padding-bottom: 40px; border-top: 1px solid var(--hair); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 14px; color: var(--ink-3); }
 
+/* Ledger paper: a red margin rule beside the question, as on a registry page */
+.hero { position: relative; }
+.hero-text { position: relative; }
+@media (min-width: 900px) {
+  .hero-text::before { content: ''; position: absolute; left: -24px; top: 44px; bottom: 0; width: 1px; background: var(--era); opacity: 0.45; }
+}
+
+/* Live input feedback */
+.field { position: relative; flex: 1; display: flex; min-width: 0; }
+.field input { width: 100%; padding-right: 40px; }
+.field-tick { position: absolute; right: 14px; top: 50%; margin-top: -9px; fill: none; stroke: var(--steady); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.field-tick path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 240ms var(--ease); }
+.field.ok .field-tick path { stroke-dashoffset: 0; }
+.suggest { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 15px; color: var(--ink-2); animation: rise 200ms var(--ease) both; }
+.suggest button { height: 32px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--hair-2); background: var(--sheet); font: 400 14px var(--font-mono); color: var(--ink); cursor: pointer; transition: border-color 120ms var(--ease), background-color 120ms var(--ease); }
+.suggest button:hover { border-color: var(--action); background: #fff; }
+
+/* Key lifelines */
+.lifelines { margin-top: 20px; position: relative; user-select: none; width: 100%; min-width: 0; }
+.lifelines svg { display: block; overflow: visible; touch-action: pan-y; cursor: crosshair; }
+.lifelines .tick line { stroke: var(--ink); stroke-opacity: 0.07; }
+.lifelines .tick text { font: 400 12px var(--font-sans); fill: var(--ink-3); }
+.lifelines .line line { stroke-width: 6; stroke-linecap: round; }
+.lifelines .line.before line { stroke: var(--ink-3); stroke-opacity: 0.55; }
+.lifelines .line.now line { stroke: var(--action); }
+.tone-recent .lifelines .line.now line { stroke: var(--recent); }
+.lifelines .line circle { fill: var(--sheet); stroke-width: 2; }
+.lifelines .line.before circle { stroke: var(--ink-3); }
+.lifelines .line.now circle { stroke: var(--action); }
+.lifelines .line:hover line { stroke-opacity: 1; }
+.lifelines .era-mark line { stroke: var(--era); stroke-width: 2; }
+.lifelines .era-mark text { font: 500 12px var(--font-sans); fill: var(--era); }
+.lifelines .cursor line { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 3; }
+.lifelines .cursor circle { fill: var(--ink); }
+.lifelines.animate .line line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: grow 700ms var(--ease) both; }
+.lifelines.animate .line circle { animation: pop 240ms var(--ease) both; }
+.lifelines.animate .era-mark line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: grow 520ms var(--ease) 700ms both; }
+.lifelines.animate .era-mark text { animation: rise 240ms var(--ease) 1000ms both; }
+.lifelines.animate .gap { animation: fade 400ms var(--ease) 500ms both; }
+.readout { margin: 8px 0 0; min-height: 24px; font-size: 14px; color: var(--ink-2); display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.readout-date { font-weight: 500; color: var(--ink); }
+.readout-hint { color: var(--ink-3); }
+.readout.tone-gap, .readout.tone-gap .readout-date { color: var(--changed); }
+.lifelines-more { margin: 2px 0 0; font-size: 13px; color: var(--ink-3); }
+
+.lifelines .group { font: 500 12px var(--font-sans); }
+.lifelines .group.before { fill: var(--ink-3); }
+.lifelines .group.now { fill: var(--action); }
+.tally { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 20px; }
+.tally > div { display: grid; gap: 2px; }
+.tally-n { font: 400 34px/1 var(--font-serif); color: var(--action); letter-spacing: -0.01em; }
+.tone-steady .tally-n { color: var(--steady); }
+.tone-recent .tally-n { color: var(--recent); }
+.tally-before .tally-n { color: var(--ink-3); }
+.tally-l { font-size: 14px; color: var(--ink-2); }
+
+/* Loading: a beam reading across the ledger lines */
+.scan { display: block; width: 100%; height: 96px; margin-top: 20px; }
+.scan line { stroke: var(--ink); stroke-opacity: 0.08; stroke-width: 6; stroke-linecap: round; }
+.scan-beam { fill: var(--action); opacity: 0.08; animation: scan 1.6s var(--ease) infinite; }
+
+/* Drag through time */
+.travel { background: var(--sheet); border: 1px solid var(--hair); border-radius: 16px; padding: 24px; }
+.travel-panels { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--hair); border-radius: 12px; overflow: hidden; margin-bottom: 8px; }
+.travel-panel { padding: 16px 20px; display: grid; gap: 4px; align-content: start; }
+.travel-panel + .travel-panel { border-left: 2px solid var(--era); }
+.travel-label { font-size: 14px; color: var(--ink-3); }
+.travel-big { font: 500 22px/1.25 var(--font-serif); animation: rise 220ms var(--ease) both; }
+.travel-big.mono { font: 400 21px/1.25 var(--font-mono); animation: none; }
+.travel-sub { font-size: 14px; color: var(--ink-2); }
+.travel-who { transition: background-color 200ms var(--ease); }
+.travel-who.tone-gap { background: var(--changed-bg); }
+.travel-who.tone-now { background: rgb(35 68 126 / 7%); }
+.travel-slider input { width: 100%; margin: 4px 0 0; accent-color: var(--ink); }
+.travel-note { margin: 12px 0 0; font-size: 14px; color: var(--ink-3); }
+
+/* How it works: the key date, decoded */
+.how { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 48px; align-items: center; }
+.how .section-lede { margin-bottom: 0; }
+.decoder { background: #1f1d19; color: #ebe6da; border-radius: 16px; padding: 24px; display: grid; gap: 12px; }
+.decoder-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; align-items: baseline; }
+.decoder-label { font-size: 13px; color: #a39d90; }
+.decoder-key { font-size: 13px; color: #cfc8b9; overflow-wrap: anywhere; }
+.decoder-nonce { font-size: 22px; letter-spacing: 0.02em; }
+.decoder-nonce span { transition: color 400ms var(--ease), opacity 400ms var(--ease); }
+.decoder-nonce .hi { color: #fff; }
+.decoder-nonce .lo { color: #a39d90; opacity: 0.55; }
+.decoder-arrow { margin-left: 166px; fill: none; stroke: #e08a7f; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.decoder-arrow path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 500ms var(--ease); }
+.decoder-arrow.on path { stroke-dashoffset: 0; }
+.decoder-out { opacity: 0.25; transform: translateY(4px); transition: opacity 400ms var(--ease), transform 400ms var(--ease); font-size: 18px; }
+.decoder-out.on { opacity: 1; transform: none; }
+.decoder-when { color: #f2b8b0; }
+.decoder-note { margin: 4px 0 0; font-size: 13px; color: #a39d90; }
+
+@keyframes grow { to { stroke-dashoffset: 0; } }
+@keyframes pop { from { opacity: 0; } }
+@keyframes fade { from { opacity: 0; } }
+@keyframes scan { 0% { transform: translateX(-60px); } 100% { transform: translateX(540px); } }
 @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
 @keyframes draw { from { transform: scaleX(0); } }
 @keyframes breathe { 50% { opacity: 0.45; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .record, .era::before, .record-loading .bone { animation: none; }
+  .record, .era::before, .record-loading .bone, .scan-beam, .suggest, .travel-big { animation: none; }
+  .lifelines.animate .line line, .lifelines.animate .era-mark line { animation: none; stroke-dashoffset: 0; }
+  .lifelines.animate .line circle, .lifelines.animate .era-mark text, .lifelines.animate .gap { animation: none; }
+  .decoder-out, .decoder-arrow path, .field-tick path { transition: none; }
 }
 
 @media (max-width: 899px) {
-  .hero { grid-template-columns: 1fr; gap: 40px; min-height: 0; padding-bottom: 48px; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 40px; min-height: 0; padding-bottom: 48px; }
   .hero-text { padding-top: 8px; }
-  .apps { grid-template-columns: 1fr; gap: 24px; }
+  .apps, .how { grid-template-columns: 1fr; gap: 24px; }
   .steps { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (max-width: 599px) {
@@ -182,9 +276,13 @@ pre { margin: 0; background: #1f1d19; color: #ebe6da; padding: 20px; border-radi
   .ask input { flex: none; }
   .record { padding: 20px 16px 16px; }
   .register li { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; }
-  .sides { grid-template-columns: 1fr; }
-  .sides > div + div { border-left: 0; border-top: 2px solid var(--era); }
-  .sides dl { grid-template-columns: 104px 1fr; }
+  .travel { padding: 16px; }
+  .travel-panels { grid-template-columns: 1fr; }
+  .travel-panel + .travel-panel { border-left: 0; border-top: 2px solid var(--era); }
+  .decoder-row { grid-template-columns: 1fr; gap: 2px; }
+  .decoder-arrow { margin-left: 0; }
   .band { padding: 56px 0; }
   .section { padding-top: 64px; }
 }
+
+.travel .readout { display: none; }

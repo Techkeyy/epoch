@@ -4,6 +4,8 @@ import { useState } from 'react';
 import type { Report } from '@/lib/epoch';
 import type { Explanation } from '@/lib/explain';
 import { register, type Entry } from '@/lib/register';
+import { Lifelines } from './Lifelines';
+import { Tally } from './Tally';
 
 export type Answer = Report & { explanation: Explanation };
 
@@ -88,6 +90,9 @@ export function Record({ answer }: { answer: Answer }) {
       </header>
       <h2 className="record-account">{answer.account}</h2>
       <p className="record-headline">{e.headline}</p>
+
+      <Tally report={answer} />
+      <Lifelines report={answer} />
 
       {entries.length > 0 && (
         <ol className="register">
@@ -193,6 +198,12 @@ export function RecordSkeleton({ account }: { account: string }) {
       </header>
       <h2 className="record-account">{account}</h2>
       <p className="record-headline">Reading its keys and the dates NEAR stamped on them</p>
+      <svg className="scan" viewBox="0 0 520 96" preserveAspectRatio="none" aria-hidden="true">
+        {[0, 1, 2, 3].map((i) => (
+          <line key={i} x1="0" x2="520" y1={22 + i * 16} y2={22 + i * 16} />
+        ))}
+        <rect className="scan-beam" x="0" y="8" width="56" height="80" />
+      </svg>
       <ol className="register">
         {[0, 1, 2].map((i) => (
           <li key={i} className="entry">

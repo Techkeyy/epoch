@@ -143,6 +143,12 @@ describe('check', () => {
     if (r.verdict.kind === 'changed') expect(r.verdict.at.time).toBe(Date.parse('2025-07-12'));
   });
 
+  it('dates every current key from the indexer when it can', async () => {
+    const events: Event[] = [{ at: '2021-06-01', add: [{ key: 'a' }] }, { at: '2025-07-12', add: [{ key: 'b' }], remove: ['a'] }, { at: '2025-07-12T00:05:00Z', add: [{ key: 'c' }] }];
+    const r = await check('g.near', fakeChain('2021-06-01', events, { indexer: true, drift: 66 * 60_000 }), NOW);
+    expect(r.keys.find((k) => k.publicKey === 'c')!.added!.time).toBe(Date.parse('2025-07-12T00:05:00Z'));
+  });
+
   it('lists the previous keys when the indexer has them', async () => {
     const r = await check('sold.near', fakeChain('2021-06-01', sale, { indexer: true }), NOW);
     expect(r.previous?.map((k) => k.publicKey)).toEqual(['seller1', 'seller2']);
