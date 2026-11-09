@@ -18,7 +18,7 @@
   --changed-bg: #f6ead0;
   --recent: #9c3a12;
   --recent-bg: #f9e2d6;
-  --gap: repeating-linear-gradient(135deg, rgb(29 27 23 / 8%) 0 4px, transparent 4px 9px);
+  --gap: repeating-linear-gradient(135deg, rgb(29 27 23 / 34%) 0 2px, transparent 2px 5px);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   --font-sans: system-ui, sans-serif;
   --font-serif: Georgia, serif;
@@ -99,8 +99,8 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .entry .margin { font-size: 14px; color: var(--ink-3); padding-top: 2px; }
 .entry strong { font-weight: 500; display: block; }
 .entry p { margin: 2px 0 0; font-size: 15px; color: var(--ink-2); }
-.entry.keyless { background: var(--gap); }
-.entry.keyless > * { background: linear-gradient(var(--sheet), var(--sheet)) padding-box; }
+.entry.keyless > div { position: relative; padding-left: 16px; }
+.entry.keyless > div::before { content: ''; position: absolute; left: 0; top: 2px; bottom: 2px; width: 6px; border-radius: 2px; background: var(--gap); }
 .entry.current strong { color: var(--ink); }
 .era { position: relative; align-items: center; padding: 10px 0; }
 .era::before {
@@ -121,7 +121,9 @@ h1, h2, h3 { font-weight: 500; margin: 0; }
 .record-keys td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--hair); }
 .record-keys td.mono { word-break: break-all; font-size: 13px; }
 .record-keys p { font-size: 14px; color: var(--ink-2); }
-.record-foot { margin-top: 16px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--ink-3); }
+.record-foot { margin-top: 16px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--ink-3); }
+.record-foot .mono { margin-right: auto; }
+.copy { padding: 0; border: 0; background: none; cursor: pointer; font: 400 13px var(--font-sans); color: var(--action); text-decoration: underline; text-underline-offset: 3px; }
 
 .record-loading .bone { display: block; height: 12px; margin: 4px 0 8px; border-radius: 4px; background: var(--paper-2); animation: breathe 1.4s ease-in-out infinite; }
 .record-error p { color: var(--ink-2); }

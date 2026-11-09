@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import type { Report } from '@/lib/epoch';
 import type { Explanation } from '@/lib/explain';
 import { register, type Entry } from '@/lib/register';
@@ -148,11 +151,37 @@ export function Record({ answer }: { answer: Answer }) {
 
       <footer className="record-foot">
         <span className="mono">Mainnet block {answer.head.toLocaleString('en-US')}</span>
+        <CopyLink account={answer.account} />
         <a href={`https://nearblocks.io/address/${answer.account}?tab=accesskeys`} target="_blank" rel="noreferrer">
           Keys on NearBlocks
         </a>
       </footer>
     </article>
+  );
+}
+
+/** Someone about to pay often wants to show the record to someone else first. */
+function CopyLink({ account }: { account: string }) {
+  const [done, setDone] = useState(false);
+  return (
+    <button
+      type="button"
+      className="copy"
+      onClick={async () => {
+        const url = new URL(window.location.href);
+        url.search = new URLSearchParams({ a: account }).toString();
+        url.hash = '';
+        try {
+          await navigator.clipboard.writeText(url.toString());
+          setDone(true);
+          setTimeout(() => setDone(false), 1800);
+        } catch {
+          window.prompt('Copy this link', url.toString());
+        }
+      }}
+    >
+      {done ? 'Link copied' : 'Copy link'}
+    </button>
   );
 }
 
