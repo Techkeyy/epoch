@@ -75,6 +75,8 @@ A simple rule for an agent or payment tool: when `verdict.recent` is true (contr
 
 ## Run it yourself
 
+The typecheck, tests and build also run on a clean machine on each push: [see the latest runs](https://github.com/Techkeyy/epoch/actions/workflows/checks.yml).
+
 Needs Node 24.
 
 ```bash
