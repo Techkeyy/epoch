@@ -1,0 +1,24 @@
+# Runs the README's checks on a clean machine, on every push. The tests use a fake chain, so no network is needed.
+name: checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  web:
+    name: Typecheck, tests, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npx -y pnpm@11.19.0 install --frozen-lockfile
+        working-directory: web
+      - run: npx -y pnpm@11.19.0 typecheck
+        working-directory: web
+      - run: npx -y pnpm@11.19.0 test
+        working-directory: web
+      - run: npx -y pnpm@11.19.0 build
+        working-directory: web
