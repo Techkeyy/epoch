@@ -165,6 +165,14 @@ Mutation check: I broke the engine on purpose six times (wrong pattern window, s
 
 Next.js 16, React 19, TypeScript, Vitest. Hosted on Render. All code was written during the hackathon, with AI coding assistance.
 
+## Hackathon facts
+
+- **Tracks:** AI Security & Defense (`security`) and Open Innovation (`open`).
+- **NEAR integrations:** NEAR mainnet RPC (`view_access_key_list` and `view_account`, now and at past blocks on archival nodes), access-key nonces read as block heights, and the NearBlocks API for key history. Epoch has no contract: it reads the chain and changes nothing.
+- **Built in the window:** everything in this repository was written between 1 and 14 November 2026 (first commit 9 November). There is no pre-hackathon code. The submitted state is tagged [`hackathon-submission`](https://github.com/Techkeyy/epoch/commits/hackathon-submission).
+- **Libraries:** Next.js 16, React 19, TypeScript and Vitest; fonts Fraunces, Courier Prime, Public Sans and JetBrains Mono from Google Fonts. No templates or boilerplate. Code was written with AI coding assistance.
+- **Other chains:** none. This is not a port of an existing product.
+
 ## Building on NEAR: what I hit
 
 - **A key's nonce is a date.** New keys start at block height times a million. This one fact makes Epoch cheap: dating every current key costs a single RPC call.
