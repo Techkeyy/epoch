@@ -2,7 +2,7 @@
 
 See who controls a NEAR account today, and since when.
 
-**[Live site](https://epoch-near.onrender.com)** · [API example](https://epoch-near.onrender.com/api/check/ruble.near) · [Benchmark results](web/benchmark/results.json)
+**[Live site](https://epoch-near.onrender.com)** · **[Demo video](https://youtu.be/q--Wk_vAlzc)** · [Demo post on X](https://x.com/Praise_Prodigyy/status/2120070698714677292) · [API example](https://epoch-near.onrender.com/api/check/ruble.near) · [Benchmark results](web/benchmark/results.json)
 
 Type an account name. Epoch tells you when the keys that control it today took over, what happened to the keys before them, and how the switch happened. One page for people, one API call for wallets, payment tools and AI agents.
 
